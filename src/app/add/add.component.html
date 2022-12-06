@@ -14,23 +14,23 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-lg-6 col-xxl-6">
                     <label for="" class="form-label">Course Title</label>
-                    <input type="text" class="form-control">
+                    <input  name="title" [(ngModel)]="title" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-lg-6 col-xxl-6">
                     <label for="" class="form-label">Description</label>
-                    <input type="text" class="form-control">
+                    <input name="desc" [(ngModel)]="desc" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-lg-6 col-xxl-6">
                     <label for="" class="form-label">Course Date</label>
-                    <input type="text" class="form-control">
+                    <input name="date" [(ngModel)]="date" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-lg-6 col-xxl-6">
                     <label for="" class="form-label">Duration</label>
-                    <input type="text" class="form-control">
+                    <input name="duration" [(ngModel)]="duration" type="text" class="form-control">
                 </div>
                 
                 <div class="col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12 col-xxl-12 p-3 text-center">
-                    <button class="btn btn-success">Submit</button>
+                    <button class="btn btn-success" (click)="view()">Submit</button>
                 </div>
             </div>
         </div>

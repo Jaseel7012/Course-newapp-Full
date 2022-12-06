@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./add.component.css']
 })
 export class AddComponent {
+  title=""
+  desc=""
+  date=""
+  duration=""
+  view=()=>{
+    const data:any=[
+      {
+        "title":this.title,
+        "desc":this.desc,
+        "date":this.date,
+        "duration":this.duration
+      }
+    ]
+    console.log(data)
+
+  }
+  
 
 }
